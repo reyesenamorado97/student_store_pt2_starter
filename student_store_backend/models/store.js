@@ -14,7 +14,6 @@ class Store {
           FROM products AS p;
           `
           );
-            console.log(results)
           return results.rows;
     }
 }
