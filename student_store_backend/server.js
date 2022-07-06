@@ -24,11 +24,11 @@ app.use(morgan("tiny"))
 app.use(security.extractUserFromJwt)
 
 // Route Definitions
-app.use("/", storeRoutes);
+app.use("/store", storeRoutes);
 
 app.use("/auth", authRoutes)
 
-app.use("/", orderRoutes)
+app.use("/orders", orderRoutes)
 
 
 /** Handle 404 errors -- this matches everything */
